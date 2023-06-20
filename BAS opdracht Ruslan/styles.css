@@ -1,0 +1,123 @@
+.logo {
+  display: inline-block;
+  vertical-align: middle; /* Aangepast om het logo verticaal uit te lijnen */
+  width: 300px;
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 0px;
+  /*mix-blend-mode: color-burn;werkt alleen als je een witte achtergrond hebt*/
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ff0000;
+  display: flex; /* Toegevoegd om flexbox-indeling te gebruiken */
+  align-items: center; /* Toegevoegd om items verticaal uit te lijnen */
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff0000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .active {
+  background-color: #ffffff;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #ff0000;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff0000;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/*
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+*/
+
